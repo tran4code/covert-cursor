@@ -1,0 +1,27 @@
+{
+  "name": "cursor-morph",
+  "version": "1.0.0",
+  "description": "An experimental web experience that transforms your cursor into UI elements",
+  "main": "index.html",
+  "scripts": {
+    "start": "python3 server.py",
+    "build": "npm run clean && npm run copy-files",
+    "clean": "rm -rf dist",
+    "copy-files": "mkdir -p dist && cp -r index.html CursorStyles.css CursorEngine.js ElementFactory.js TransformManager.js Elements dist/",
+    "serve": "cd dist && python3 -m http.server 8000"
+  },
+  "keywords": [
+    "cursor",
+    "ui",
+    "experimental",
+    "interactive",
+    "web"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "homepage": "https://YOUR-USERNAME.github.io/covert-cursor",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YOUR-USERNAME/covert-cursor.git"
+  }
+}

@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CursorMorph - Break the Fourth Wall</title>
+    <link rel="stylesheet" href="CursorStyles.css">
+</head>
+<body>
+    <div id="custom-cursor"></div>
+    
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">CursorMorph</span>
+                <span class="logo-tag">v1.0</span>
+            </div>
+            <div class="nav-links">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#playground" class="nav-link">Playground</a>
+                <a href="#showcase" class="nav-link">Showcase</a>
+                <a href="#about" class="nav-link">About</a>
+            </div>
+        </div>
+    </nav>
+    
+    <main>
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="title-line">Your Cursor</span>
+                    <span class="title-line highlight">Reimagined</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Experience the web like never before. Click any element and watch your cursor transform into a living, breathing UI component.
+                </p>
+                <div class="hero-actions">
+                    <button class="btn-hero primary">Start Exploring</button>
+                    <button class="btn-hero secondary">Watch Demo</button>
+                </div>
+                <div class="hero-hints">
+                    <div class="hint-item">
+                        <kbd>Click</kbd> any element to transform
+                    </div>
+                    <div class="hint-item">
+                        <kbd>A</kbd> to reset cursor
+                    </div>
+                    <div class="hint-item">
+                        <kbd>ESC</kbd> for system cursor
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-elements">
+                    <div class="float-element button-preview">Button</div>
+                    <div class="float-element input-preview">Input</div>
+                    <div class="float-element toggle-preview">
+                        <div class="mini-toggle"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="playground" class="playground-section">
+            <div class="section-header">
+                <h2>Interactive Playground</h2>
+                <p>Click any element below to transform your cursor</p>
+            </div>
+            
+            <div class="playground-grid">
+                <div class="playground-card">
+                    <h3>Form Controls</h3>
+                    <div class="element-showcase">
+                        <div class="showcase-item">
+                            <label>Text Input</label>
+                            <input type="text" placeholder="Click me to type..." class="demo-input">
+                        </div>
+                        <div class="showcase-item">
+                            <label>Email Input</label>
+                            <input type="email" placeholder="your@email.com" class="demo-input">
+                        </div>
+                        <div class="showcase-item">
+                            <label>Password</label>
+                            <input type="password" placeholder="••••••••" class="demo-input">
+                        </div>
+                        <div class="showcase-item">
+                            <label>Textarea</label>
+                            <textarea placeholder="Multi-line text..." class="demo-textarea"></textarea>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="playground-card">
+                    <h3>Buttons & Actions</h3>
+                    <div class="element-showcase">
+                        <div class="showcase-item">
+                            <button class="btn-primary">Primary Action</button>
+                        </div>
+                        <div class="showcase-item">
+                            <button class="btn-secondary">Secondary</button>
+                        </div>
+                        <div class="showcase-item">
+                            <button class="btn-success">Success</button>
+                        </div>
+                        <div class="showcase-item">
+                            <button class="btn-danger">Danger Zone</button>
+                        </div>
+                        <div class="showcase-item">
+                            <button class="btn-outline">Outline Style</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="playground-card">
+                    <h3>Toggles & Checks</h3>
+                    <div class="element-showcase">
+                        <div class="showcase-item">
+                            <label class="checkbox-label">
+                                <input type="checkbox" class="fancy-checkbox">
+                                <span>Premium Features</span>
+                            </label>
+                        </div>
+                        <div class="showcase-item">
+                            <label class="checkbox-label">
+                                <input type="checkbox" class="fancy-checkbox" checked>
+                                <span>Notifications</span>
+                            </label>
+                        </div>
+                        <div class="showcase-item">
+                            <label class="toggle-label">
+                                <span>Dark Mode</span>
+                                <div class="toggle-switch">
+                                    <input type="checkbox" checked>
+                                    <span class="toggle-slider"></span>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="showcase-item">
+                            <label class="toggle-label">
+                                <span>Auto-save</span>
+                                <div class="toggle-switch">
+                                    <input type="checkbox">
+                                    <span class="toggle-slider"></span>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="playground-card">
+                    <h3>Sliders & Ranges</h3>
+                    <div class="element-showcase">
+                        <div class="showcase-item">
+                            <label>Volume</label>
+                            <input type="range" min="0" max="100" value="75" class="demo-slider">
+                            <span class="slider-value">75%</span>
+                        </div>
+                        <div class="showcase-item">
+                            <label>Brightness</label>
+                            <input type="range" min="0" max="100" value="50" class="demo-slider">
+                            <span class="slider-value">50%</span>
+                        </div>
+                        <div class="showcase-item">
+                            <label>Progress</label>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 65%"></div>
+                            </div>
+                            <span class="progress-label">65% Complete</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="playground-card">
+                    <h3>Selections</h3>
+                    <div class="element-showcase">
+                        <div class="showcase-item">
+                            <label>Country</label>
+                            <select class="demo-select">
+                                <option>United States</option>
+                                <option>Canada</option>
+                                <option>United Kingdom</option>
+                                <option>Australia</option>
+                            </select>
+                        </div>
+                        <div class="showcase-item">
+                            <label>Language</label>
+                            <select class="demo-select">
+                                <option>English</option>
+                                <option>Spanish</option>
+                                <option>French</option>
+                                <option>German</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="playground-card">
+                    <h3>Media & Links</h3>
+                    <div class="element-showcase">
+                        <div class="showcase-item">
+                            <a href="#" class="demo-link">Documentation →</a>
+                        </div>
+                        <div class="showcase-item">
+                            <a href="#" class="demo-link fancy">✨ Premium Features</a>
+                        </div>
+                        <div class="showcase-item">
+                            <img src="https://via.placeholder.com/300x200/4a5568/ffffff?text=Click+Me" 
+                                 alt="Demo image" class="demo-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="showcase" class="showcase-section">
+            <div class="section-header">
+                <h2>Real-World Examples</h2>
+                <p>See how CursorMorph transforms everyday interactions</p>
+            </div>
+            
+            <div class="example-grid">
+                <div class="example-card">
+                    <div class="example-header">
+                        <h3>Shopping Cart</h3>
+                    </div>
+                    <div class="example-content">
+                        <div class="cart-item">
+                            <img src="https://via.placeholder.com/80x80/667eea/ffffff?text=Item" alt="Product">
+                            <div class="cart-details">
+                                <h4>Premium Widget</h4>
+                                <p>$29.99</p>
+                            </div>
+                            <button class="btn-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="example-card">
+                    <div class="example-header">
+                        <h3>Music Player</h3>
+                    </div>
+                    <div class="example-content">
+                        <div class="player-controls">
+                            <button class="btn-player">⏮</button>
+                            <button class="btn-player play">▶</button>
+                            <button class="btn-player">⏭</button>
+                        </div>
+                        <input type="range" class="player-slider" value="30">
+                        <div class="player-time">1:23 / 4:56</div>
+                    </div>
+                </div>
+                
+                <div class="example-card">
+                    <div class="example-header">
+                        <h3>Settings Panel</h3>
+                    </div>
+                    <div class="example-content">
+                        <div class="settings-list">
+                            <div class="setting-item">
+                                <span>Enable notifications</span>
+                                <div class="toggle-switch small">
+                                    <input type="checkbox" checked>
+                                    <span class="toggle-slider"></span>
+                                </div>
+                            </div>
+                            <div class="setting-item">
+                                <span>Auto-update</span>
+                                <div class="toggle-switch small">
+                                    <input type="checkbox">
+                                    <span class="toggle-slider"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="example-card">
+                    <div class="example-header">
+                        <h3>Contact Form</h3>
+                    </div>
+                    <div class="example-content">
+                        <form class="demo-form">
+                            <input type="text" placeholder="Your Name" class="form-input">
+                            <input type="email" placeholder="Email" class="form-input">
+                            <textarea placeholder="Message" class="form-textarea"></textarea>
+                            <button type="submit" class="btn-submit">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="form-section">
+            <div class="section-header">
+                <h2>Standalone Form Example</h2>
+                <p>Click this form to copy the entire form as your cursor</p>
+            </div>
+            
+            <div class="standalone-form-container">
+                <form class="standalone-form">
+                    <h3>Newsletter Signup</h3>
+                    <div class="form-group">
+                        <label>Name</label>
+                        <input type="text" placeholder="Enter your name" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" placeholder="your@email.com" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>Interests</label>
+                        <select class="form-control">
+                            <option>Web Development</option>
+                            <option>UI/UX Design</option>
+                            <option>Mobile Apps</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox"> Send me weekly updates
+                        </label>
+                    </div>
+                    <button type="submit" class="btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </section>
+        
+        <section id="about" class="about-section">
+            <div class="about-content">
+                <h2>About CursorMorph</h2>
+                <p class="about-intro">
+                    CursorMorph is an experimental web experience that challenges the conventional boundaries 
+                    of user interface design. By transforming your cursor into the very elements you interact with, 
+                    it creates a unique, immersive browsing experience.
+                </p>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <div class="feature-icon">🎯</div>
+                        <h3>Precision Control</h3>
+                        <p>Every cursor transformation maintains full functionality</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">⚡</div>
+                        <h3>60 FPS Performance</h3>
+                        <p>Smooth animations and responsive interactions</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">♿</div>
+                        <h3>Accessible</h3>
+                        <p>Keyboard shortcuts and screen reader support</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p>CursorMorph © 2024 | An experimental UI experience</p>
+            <div class="footer-links">
+                <a href="#" class="footer-link">GitHub</a>
+                <a href="#" class="footer-link">Twitter</a>
+                <a href="#" class="footer-link">License</a>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="CursorEngine.js"></script>
+    <script src="ElementFactory.js"></script>
+    <script src="TransformManager.js"></script>
+    <script src="Elements/ButtonCursor.js"></script>
+    <script src="Elements/InputCursor.js"></script>
+    <script src="Elements/CheckboxCursor.js"></script>
+    <script src="Elements/ToggleCursor.js"></script>
+    <script src="Elements/SliderCursor.js"></script>
+    <script src="Elements/DropdownCursor.js"></script>
+    <script src="Elements/LinkCursor.js"></script>
+    <script src="Elements/ImageCursor.js"></script>
+    <script src="Elements/ProgressCursor.js"></script>
+    <script src="Elements/ContainerCursor.js"></script>
+    <script src="Elements/FormCursor.js"></script>
+    <script src="Elements/CardCursor.js"></script>
+    <script src="Elements/ShowcaseCursor.js"></script>
+    <script>
+        // Initialize the cursor system
+        window.addEventListener('DOMContentLoaded', () => {
+            window.cursorMorph = new CursorEngine();
+            
+            // Update slider values
+            document.querySelectorAll('.demo-slider').forEach(slider => {
+                slider.addEventListener('input', (e) => {
+                    const value = e.target.value;
+                    const valueDisplay = e.target.nextElementSibling;
+                    if (valueDisplay && valueDisplay.classList.contains('slider-value')) {
+                        valueDisplay.textContent = value + '%';
+                    }
+                });
+            });
+            
+            // Smooth scrolling
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({ behavior: 'smooth' });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
